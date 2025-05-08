@@ -3,3 +3,83 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+:root {
+  --bg-header-color: #ff6900;
+  --bg-footer-color: #1a1a1a;
+}
+
+.debug {
+  .site_header {
+    border: 2px dashed black;
+  }
+
+  .site_main {
+    max-width: 1200px;
+    border: 2px dashed black;
+    background-color: aquamarine;
+    margin-top: 50px;
+  }
+  .site_footer {
+    border: 2px dashed red;
+  }
+}
+
+.site_header {
+  height: 70px;
+  width: 100%;
+  background-color: var(--bg-header-color);
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 0px 5px rgba(174, 175, 177, 0.591);
+
+  .site_nav {
+    height: 100%;
+    max-width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .list_pages {
+    .link_pages {
+      display: flex;
+      list-style: none;
+      gap: 5px;
+
+      a {
+        text-decoration: none;
+        color: white;
+        font-weight: 600;
+      }
+    }
+  }
+  .logo_header {
+    img {
+      width: 10rem;
+      vertical-align: middle;
+    }
+  }
+  .icon_header {
+    color: white;
+    font-size: 1.2rem;
+    i {
+      padding-right: 5px;
+    }
+  }
+}
+
+/* start main */
+.site_main {
+  min-height: 1200px;
+  margin: 0 auto;
+}
+/*  start foooter*/
+.site_footer {
+  height: 100px;
+  width: 100%;
+  background-color: var(--bg-footer-color);
+}
