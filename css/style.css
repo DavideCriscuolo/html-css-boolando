@@ -100,6 +100,17 @@ body {
   .cards {
     display: flex;
   }
+  .hide_hover {
+    display: none;
+  }
+  .card:hover .hide_hover {
+    display: block;
+  }
+
+  .card:hover .hovering {
+    display: none;
+  }
+
   .card {
     width: calc(100% / 12 * 4);
     padding: 20px;
@@ -107,6 +118,7 @@ body {
     img {
       max-width: 100%;
     }
+
     .sconto {
       background-color: red;
       padding: 2px 5px;
