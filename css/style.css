@@ -8,7 +8,9 @@
   --bg-header-color: #ff6900;
   --bg-footer-color: #1a1a1a;
 }
-
+body {
+  font-family: sans-serif;
+}
 .debug {
   .site_header {
   }
@@ -33,7 +35,7 @@
 
 .position_after {
   position: absolute;
-  bottom: 80px;
+  bottom: 115px;
   left: 60px;
 }
 
@@ -109,7 +111,7 @@
       background-color: red;
       padding: 2px 5px;
       position: absolute;
-      bottom: 80px;
+      bottom: 115px;
       left: 20px;
       color: white;
       font-weight: 600;
@@ -129,6 +131,14 @@
       right: 20px;
       background-color: white;
       padding: 10px;
+    }
+
+    .name_product {
+      font-weight: 700;
+    }
+    .price_product_red {
+      color: red;
+      font-weight: 600;
     }
   }
 }
