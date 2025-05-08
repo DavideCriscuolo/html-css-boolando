@@ -11,16 +11,22 @@
 
 .debug {
   .site_header {
-    border: 2px dashed black;
   }
 
   .site_main {
-    max-width: 1200px;
     border: 2px dashed black;
     background-color: aquamarine;
-    margin-top: 50px;
   }
   .site_footer {
+    border: 2px dashed red;
+  }
+  .container_cards {
+    border: 2px dashed black;
+  }
+  .card {
+    border: 2px dashed red;
+  }
+  .card_levis {
     border: 2px dashed red;
   }
 }
@@ -66,6 +72,8 @@
   .icon_header {
     color: white;
     font-size: 1.2rem;
+
+    align-items: flex-end;
     i {
       padding-right: 5px;
     }
@@ -76,6 +84,21 @@
 .site_main {
   min-height: 1200px;
   margin: 0 auto;
+  max-width: 80%;
+  margin-top: 100px;
+  margin-bottom: 30px;
+
+  .cards {
+    display: flex;
+  }
+  .card {
+    width: calc(100% / 3);
+    padding: 20px;
+
+    img {
+      max-width: 100%;
+    }
+  }
 }
 /*  start foooter*/
 .site_footer {
