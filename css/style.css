@@ -161,6 +161,7 @@ body {
   background-color: var(--bg-footer-color);
 
   .nav_footer {
+    padding: 20px;
     height: 100%;
     max-width: 1200px;
     margin: 0 auto;
